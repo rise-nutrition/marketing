@@ -1,0 +1,87 @@
+{% extends "layout/base.html" %}
+
+{% block title %}Demo{% endblock %}
+
+{% block content %}
+<div class="page-header header-filter header-small" data-parallax="true" style="background-image: url('{{ url_for('static', filename='img/bg/team.jpg') }}');">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 ml-auto mr-auto text-center">
+                <h1 class="title">Demo the Dashboard</h1>
+                <h4>We are working really hard to provide the best experience possible!</h4>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="main main-raised" style='margin-bottom: 3em'>
+    <div class="container">
+        <div class="about-description text-center">
+            <div class="row">
+                <div class="col-md-8 ml-auto mr-auto text-center">
+                    <h2 class="title">Look Out for Rise's Dashboard</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8 ml-auto mr-auto">
+                    <h5 class="description">
+                        We are still building the dashboard, so sit tight! We want to provide a good experience 
+                        for everyone who uses it, so we are making sure that it's built correctly.
+
+                        <br /><br />
+                        We are scheduled to begin beta testing the application and dashboard over the summer of 2019.
+                    </h5>
+                </div>
+            </div>
+        </div>
+        <div class="about-contact">
+            <div class="row">
+                <div class="col-md-8 ml-auto mr-auto">
+                    <h2 class="text-center title">Want to work with us?</h2>
+                    <h4 class="text-center description">
+                        Are you excited and can't wait? Want to help us with your feedback? Are you okay with a few bugs? Then 
+                        consider signing up to be a Beta tester of our dashboard and application! You will get to use our features 
+                        as they are built and released by our developers. Your team will also get exclusive discounts, support, 
+                        and more!
+                        <br /><br />
+                        If you are interested, please sign up below, and we will be in touch!
+                    </h4>
+                    <form action="https://formspree.io/dan@risenutrition.org" method="POST" class='contact-form'>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="name" class="bmd-label-floating">Your name</label>
+                                    <input type="text" name='name' class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="email" class="bmd-label-floating">Your Email</label>
+                                    <input type="email" name='email' class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-4" style='padding-top: 11px'>
+                                <select class="selectpicker" name='role' data-style="select-with-transition" data-size="7">
+                                    <option value="1" disabled>Your Role</option>>
+                                    <option value="coach">I&apos;m a Coach</option>
+                                    <option value="dietician">I&apos;m a Dietician</option>
+                                    <option value="athelete">I&apos;m an Athelete</option>
+                                    <option value="curious">I&apos;m just Curious (Other)</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 ml-auto mr-auto text-center">
+                                <input type="submit" value='Let&apos;s Talk' class="btn btn-primary btn-round">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/plugins/bootstrap-selectpicker.js') }}" type="text/javascript"></script>
+{% endblock %}

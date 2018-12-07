@@ -1,0 +1,102 @@
+{% extends "layout/base.html" %}
+
+{% block title %}About{% endblock %}
+
+{% block content %}
+<div class="page-header header-filter header-small" data-parallax="true" style="background-image: url('{{ url_for('static', filename='img/bg/corn.jpg') }}');">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 ml-auto mr-auto text-center">
+        <h1 class="title">About Rise Nutrition</h1>
+        <h4>Meet the amazing team behind this project and find out more about how we work.</h4>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="main main-raised">
+  <div class="container">
+    <div class="about-description text-center">
+      <div class="row">
+        <div class="col-md-8 ml-auto mr-auto text-center">
+          <h2 class="title">More Than Just a Business</h2>
+          <h5 class="description">Starting with a desire to serve, a love for nutrition, and a passion for data, Rise
+            Nutrition grew from the goal to be more in life than just average.</h5>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8 ml-auto mr-auto">
+          <p class="description">
+            On a service trip with <a href='https://www.younglife.org/'>Younglife Ministries</a> to Montecristo, El
+            Salvador, three friends saw that the power of love and hardwork could transform a community into something
+            greater and better than what anyone could imagine. At the same time though, they saw that many of the
+            people of Montecristo were malnurished, due to a lack of certain nutritients in their food. This prompted a
+            reaction.
+
+            <br /><br />
+            On a subsequent trip, these friends helped the community to load in, via fishing boats, enough dirt and
+            seeds to provide every household a small vegetable garden that would fill in the gaps of missing vitamins
+            and nutritients to the island's people. From these trips, the idea of Rise Nutrition was born.
+
+            <br /><br />
+            Known then only as <strong><em>The Dream</em></strong>, the idea was simple; to provide communities around
+            the world access to resources and a healthy lifestyle that they could not get themselves. Through both
+            direct intervention and partnering with other non-profit organizations, Rise Nutrition's mission is to
+            provide every region in the world a stable and healthy diet that will allow the communities there to Rise
+            Above the Rest.
+
+            <br /><br />
+            To fund this outreach organization, Rise Nutrition provides professional, college, and high school teams
+            the same information, data collection, and algorithms to develop and maintain the healthiest diet and
+            exercise regimens possible.
+
+            <br /><br />
+            Developed by Data Scientists, approved by Nutritionists and Personal Trainers, and maintained by a devoted
+            team of Dreamers, Rise Nutrition is there to make sure you, your team, and your community can be as strong
+            and healthy as possible.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="features-3">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="phone-container">
+            <img src="{{ url_for('static', filename='img/service/day1.jpg') }}">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <!-- Some <br /> tags to push the text to align with the image, you can remove it if you have more text on the right side :-) -->
+          <h2 class="title">Meet Your Teammates</h2>
+          <div class="info info-horizontal">
+            <div class="icon icon-primary">
+              <i class="material-icons">school</i>
+            </div>
+            <div class="description">
+              <h4 class="info-title">Competitive Edge</h4>
+              <p>Sports are all about the competition, and we need to be a step ahead of the competition to win. Rise Nutrition is there to give the edge over others.</p>
+            </div>
+          </div>
+          <div class="info info-horizontal">
+            <div class="icon icon-primary">
+              <i class="material-icons">code</i>
+            </div>
+            <div class="description">
+              <h4 class="info-title">Data Driven</h4>
+              <p>Our data expertise comes from some of the top schools and companies around the world. We run towards complex problems, and we know how to solve them.</p>
+            </div>
+          </div>
+          <div class="info info-horizontal">
+            <div class="icon icon-primary">
+              <i class="material-icons">watch_later</i>
+            </div>
+            <div class="description">
+              <h4 class="info-title">Down to Earth</h4>
+              <p>We understand our users, their problems, and the solutions they want. We don't overcomplicate, and we cut right to the point. Rise Nutrition is there for you.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

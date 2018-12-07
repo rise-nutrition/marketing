@@ -1,0 +1,134 @@
+{% extends "layout/base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div class="page-header header-filter" data-parallax="true" style="background-image: url('{{ url_for('static', filename='img/bg/team.jpg') }}')">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7">
+        <h1 class="title">Winning Starts with Us.</h1>
+        <h4>An athelete is only as good as the effort they put into their diet &amp; exercise. Rise Nutrition allows your team to scale personalized nutrition plans for each individual on your team.</h4>
+        <br>
+        <a data-scroll href="#learn-more" class="btn btn-rose btn-raised btn-lg">
+          <i class="fa fa-chevron-right"></i> Learn More
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="main main-raised" id='learn-more'>
+  <div class="container">
+    <div class="section text-center">
+      <div class="row">
+        <div class="col-md-8 ml-auto mr-auto">
+          <h2 class="title">Perform at the Highest Levels</h2>
+          <h5 class="description">Rise Nutrition gives the algorithms, experience, and ability to put your team in the best shape to compete. 
+            Using our intuitive dashboard, focus on the diet and exercise plans that will give the competitive edge over others.</h5>
+        </div>
+      </div>
+      <div class="features">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="info">
+              <div class="icon icon-info">
+                <i class="material-icons">how_to_reg</i>
+              </div>
+              <h4 class="info-title">Personalized Data</h4>
+              <p>Each athlete is different, so treat them as such. Every individual is tracked against their own past and present metrics to create personalized health regimens that fit their body and requirements.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="info">
+              <div class="icon icon-success">
+                <i class="material-icons">show_chart</i>
+              </div>
+              <h4 class="info-title">Comprehensive Data Models</h4>
+              <p>We are constantly improving our data models to give you and your atheletes the drive and confidence to perform at their peak level. Through an intuitive dashboard, view cutting edge, real time data.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="info">
+              <div class="icon icon-danger">
+                <i class="material-icons">ring_volume</i>
+              </div>
+              <h4 class="info-title">Professional Support</h4>
+              <p>Sports move fast. You need a team behind your data and analytics to be faster to stay ahead of the curve. Our 24/7 personalized customer support will ensure you are always at the top of your game.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div style='margin-top: 4em; width: 100%'></div>
+<div class="main">
+  <div class="cd-section" id="features">
+    <div class="features-5" style="background-image: url('{{ url_for('static', filename='img/bg/sf-college.jpg') }}')">
+      <div class="col-md-8 ml-auto mr-auto text-center">
+        <h2 class="title">Gain the Competitive Edge</h2>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="info">
+              <div class="icon">
+                <i class="material-icons">bar_chart</i>
+              </div>
+              <h4 class="info-title">Dietary Analysis</h4>
+              <p>Using an ever-growing database of over 50,000 foods and meals, we can accurately track and aggregate your atheletes' dietary habits. </p>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="info">
+              <div class="icon">
+                <i class="material-icons">tune</i>
+              </div>
+              <h4 class="info-title">Regimen Suggestions</h4>
+              <p>Determined by your atheletes' requirements, diet, and exercise, Rise Nutrition's data models can accurately and efficiently create diet suggestions. </p>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="info">
+              <div class="icon">
+                <i class="material-icons">tonality</i>
+              </div>
+              <h4 class="info-title">Sport Specific</h4>
+              <p>Sprinting, swimming, or hitting, Rise Nutrition's sports and regimen database will cater to each athelete's individual needs. If not, we will build one.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="info">
+              <div class="icon">
+                <i class="material-icons">dashboard</i>
+              </div>
+              <h4 class="info-title">Customized Dashboard</h4>
+              <p>Some teams need <i>this</i>, others need <i>that</i>. We get it. Rise Nutrition's dashboard is built around flexibility &amp; customization for your team. </p>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="info">
+              <div class="icon">
+                <i class="material-icons">access_time</i>
+              </div>
+              <h4 class="info-title">Realtime Monitoring</h4>
+              <p>Your atheletes have the ability to record and monitor their own diet and exercise habits, which appear almost instantly in the dashboard. </p>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="info">
+              <div class="icon">
+                <i class="material-icons">thumb_up</i>
+              </div>
+              <h4 class="info-title">Intuitive &amp; Easy</h4>
+              <p>Rise Nutrition's dashboard was built with college and professional sports team in mind, after researching and interviewing coaches &amp; dieticians. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
