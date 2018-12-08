@@ -317,7 +317,9 @@ $(window).on('resize', function() {
   materialKit.initRotateCard();
 });
 
+
 $(document).on('click', '.card-rotate .btn-rotate', function() {
+  
   var $rotating_card_container = $(this).closest('.rotating-card-container');
 
   if ($rotating_card_container.hasClass('hover')) {

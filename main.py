@@ -1,6 +1,6 @@
 import os
 
-from flask import Flask, render_template
+from flask import Flask, render_template, request, send_from_directory
 
 BASE_DIR = os.path.dirname(os.path.realpath(__file__))
 
@@ -18,3 +18,8 @@ def about():
 @app.route('/demo')
 def demo():
     return render_template('demo.html')
+
+@app.route('/robots.txt')
+@app.route('/sitemap.xml')
+def static_from_root():
+    return send_from_directory(app.static_folder, request.path[1:])
