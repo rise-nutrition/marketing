@@ -111,12 +111,27 @@
 
     // give correct size to ripple container
     .navbar-brand {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 15px 0px 15px;
+
         position: relative;
         color: inherit;
         height: 50px;
-        font-size: $navbar-brand-font-size - 0.125;
+        font-size: $navbar-brand-font-size ;
         line-height: 30px;
-        padding: $padding-general-y 0;
+    }
+
+    img.projectLogo {
+        max-height: 100%;
+    }
+
+    span.projectTitle {
+        font-family: Helvetica;
+        font-weight: bold;
+        font-size: larger;
+        margin-left: .3em;
     }
 
     &.bg-primary{

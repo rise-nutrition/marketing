@@ -11,7 +11,9 @@
                 <div class="ripple-container"></div>
             </a> -->
             <a class="navbar-brand" href="{{ url_for('index') }}">
-                Rise Nutrition </a>
+                <img src="{{ url_for('static', filename='img/person.png') }}" class="projectLogo">
+                &nbsp;<span class="projectTitle">Rise Nutrition</span> 
+            </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="navbar-toggler-icon"></span>
@@ -44,6 +46,9 @@
                         </a>
                         <a href="https://twitter.com/rise_nutrition" class="dropdown-item">
                             <i class="fa fa-twitter fa-2x"></i>&nbsp;&nbsp; Twitter
+                        </a>
+                        <a href="https://www.instagram.com/fuel_to_rise" class="dropdown-item">
+                            <i class="fa fa-instagram fa-2x"></i>&nbsp;&nbsp; Instagram
                         </a>
                     </div>
                 </li>
